@@ -39,3 +39,34 @@ cursor.execute(
 
 print("Tabla: 'alumno' creada correctamente")
 
+#""""""""""""""""""""""""""""""
+#         crear tabla alumno
+#"""""""""""""""""""""""""""""""""""""
+
+cursor.execute("""
+    CREATE TABLE IF NOT EXIST CURSOR()
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre TEXT NOT NULL,
+    hora INTEGER
+    
+               """)
+
+print("Tabla: 'curso' creada correctamente")
+
+
+#=======================================
+#        CREAR TABLA MATRICULA
+#=======================================
+
+cursor.execute
+
+      CREATE TABLE IF NOT EXISTS matricula(
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          alumno_id INTEGER NOT NULL,
+          curso_id INTEGER NOT NULL,
+          fecha TEXT NOT NULL,
+          
+          FOREIGN KEY(alumno_id)
+          FOREIGH KEY(alumno(id))
+               REFERENCE curso(id)
+        )           
